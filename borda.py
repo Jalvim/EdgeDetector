@@ -16,12 +16,6 @@ def erosion(inImage, w):
 		if w.sum() == inImage[(vecx[i]-l):(vecx[i]+l+1), (vecy[i]-l):(vecy[i]+l+1)].sum():
 			output[vecx[i], vecy[i]] = 255
 
-	# for i in range(1,lim1):
-	# 	for j in range(1,lim2):
-
-	# 		if w.sum() == inImage[(i-l):(i+l+1), (j-l):(j+l+1)].sum():	
-	# 			output[i, j] = 255
-
 	return np.uint8(output)
 
 
