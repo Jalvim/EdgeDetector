@@ -25,7 +25,7 @@ def main():
 		ed = borda.edge(g)
 		ed = np.array(cv2.cvtColor(ed, cv2.COLOR_GRAY2BGR)) #
 		
-		out = cv2.addWeighted(frame, 0.7, ed, 0.3, 0)
+		out = cv2.addWeighted(frame, 0.5, ed, 0.5, 0)
 		cv2.imshow("Vizualization 1", out)
 		cv2.imshow("Vizualization 2", ed)
 		rval, frame = vc.read()
